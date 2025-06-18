@@ -1,4 +1,4 @@
-## 📊 React Admin Dashboard
+## 📊 React Dashboard
 
 This is a responsive and modern **Admin Dashboard** built using **React**, **Material UI (MUI)**, **Nivo Charts**, **Formik**, **Yup**, **FullCalendar**, and **Data Grid**. The dashboard supports **Light and Dark Mode**, dynamic **Chart visualizations**, **Kanban Board**, **Form validation**, and **Calendar integration** to help manage tasks and monitor analytics efficiently.
 
@@ -48,8 +48,8 @@ Dashboard Page/
 
 1. **Clone the repository:**
 
-```bash
-git clone 
+```bash 
+git clone https://github.com/Ishika-45/Dashboard-Page.git
 
 2. **Start the development server:**
 
