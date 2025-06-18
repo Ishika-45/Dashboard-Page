@@ -25,11 +25,14 @@
     "@nivo/geo": "^0.99.0",
     "@nivo/line": "^0.99.0",
     "@nivo/pie": "^0.99.0",
+    "@syncfusion/ej2-react-kanban": "^29.2.4",
+    "@tailwindcss/vite": "^4.1.10",
     "formik": "^2.4.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-pro-sidebar": "^1.1.0",
     "react-router-dom": "^7.6.2",
+    "tailwindcss": "^4.1.10",
     "yup": "^1.6.1"
   },
   "devDependencies": {

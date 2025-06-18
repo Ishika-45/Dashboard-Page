@@ -11,8 +11,9 @@ import Bar from "./scenes/bar";
 import Form from "./scenes/form";
 import Line from "./scenes/line";
 import Pie from "./scenes/pie";
-// import KanbanBoard from "./scenes/kanban";
+import KanbanBoard from "./scenes/kanban";
 import Calendar from "./scenes/calendar";
+// import KanbanBoard from "./components/KanbanBoard";
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />
               <Route path="/line" element={<Line />} />
-{/* <Route path="/kanban" element={<KanbanBoard />} /> */}
+<Route path="/kanban" element={<KanbanBoard />} />
               <Route path="/calendar" element={<Calendar />} />
 
             </Routes>

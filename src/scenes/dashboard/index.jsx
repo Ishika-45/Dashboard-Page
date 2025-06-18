@@ -11,6 +11,7 @@ import LineChart from "../../components/LineChart";
 import BarChart from "../../components/BarChart";
 import PieChart from "../../components/PieChart";
 import ProgressCircle from "../../components/ProgressCircle";
+import KanbanBoard from "../../components/KanbanBoard";
 import StatBox from "../../components/StatBox";
 
 const Dashboard = () => {
@@ -269,7 +270,7 @@ const Dashboard = () => {
             <BarChart isDashboard={true} />
           </Box>
         </Box>
-        <Box
+        {/* <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
@@ -283,9 +284,21 @@ const Dashboard = () => {
             Kanban Board
           </Typography>
           <Box height="200px">
-            {/* <KanbanBoard isDashboard={true} /> */}
+            <KanbanBoard isDashboard={true} />
           </Box>
-        </Box>
+        </Box> */}
+        <Box
+  gridColumn="span 4"
+  gridRow="span 2"
+  backgroundColor={colors.primary[400]}
+  p={2}
+  overflow="hidden"
+>
+  <Typography variant="h6" color={colors.grey[100]} mb={1}>
+    Task Manager
+  </Typography>
+  <KanbanBoard isDashboard={true} />
+</Box>
       </Box>
     </Box>
 
