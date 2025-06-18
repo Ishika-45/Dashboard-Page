@@ -10,7 +10,7 @@ import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
+import ViewKanbanIcon from '@mui/icons-material/ViewKanban';
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TImelineOutlined";
@@ -21,29 +21,18 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
-    <MenuItem
-      active={selected === title}
-      style={{
-        color: colors.grey[100],
-      }}
-      onClick={() => setSelected(title)}
-      icon={icon}
-    >
-      <Typography>{title}</Typography>
-      <Link to={to} />
-    </MenuItem>
-//     <Link to={to} style={{ textDecoration: 'none' }}> 
-//       <MenuItem
-//         active={selected === title}
-//         style={{
-//           color: colors.grey[100],
-//         }}
-//         onClick={() => setSelected(title)}
-//         icon={icon}
-//       >
-//         <Typography>{title}</Typography>
-//       </MenuItem>
-//    </Link>
+    <Link to={to} style={{ textDecoration: 'none' }}> 
+      <MenuItem
+        active={selected === title}
+        style={{
+          color: colors.grey[100],
+        }}
+        onClick={() => setSelected(title)}
+        icon={icon}
+      >
+        <Typography>{title}</Typography>
+      </MenuItem>
+   </Link>
   );
 };
 
@@ -104,7 +93,7 @@ const sidebar = () => {
                                     alt="profile-user"
                                     width="100px"
                                     height="100px"
-                                    src={`../../assets/user.png`}
+                                    src={`./user.png`}
                                     style={{ cursor: "pointer", borderRadius: "50%" }} />
                             </Box>
 
@@ -184,9 +173,9 @@ const sidebar = () => {
                             setSelected={setSelected}
                         />
                         <Item
-                            title="FAQ Page"
-                            to="/faq"
-                            icon={<HelpOutlineOutlinedIcon />}
+                            title="Kanban Board"
+                            to="/kanban"
+                            icon={<ViewKanbanIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
@@ -219,13 +208,7 @@ const sidebar = () => {
                             selected={selected}
                             setSelected={setSelected}
                         />
-                        <Item
-                            title="Geography Chart"
-                            to="/geography"
-                            icon={<MapOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
-                        />
+                       
                     </Box>
                 </Menu>
             </Sidebar>
